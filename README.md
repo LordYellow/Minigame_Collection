@@ -1,2 +1,2 @@
 # Minigame_Collection
-This is a collection of Minimales
+This is a collection of Minigames
