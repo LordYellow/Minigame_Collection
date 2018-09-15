@@ -1,0 +1,12 @@
+//
+// Created by Raphael Straub on 15.09.18.
+//
+
+#ifndef MINIGAME_COLLECTION_DEFINITIONS_HPP
+#define MINIGAME_COLLECTION_DEFINITIONS_HPP
+
+#define YELLOWDEBUG 2
+
+#include "./debug.hpp"
+
+#endif //MINIGAME_COLLECTION_DEFINITIONS_HPP
