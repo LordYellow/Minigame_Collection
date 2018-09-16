@@ -2,8 +2,8 @@
 // Created by Raphael Straub on 15.09.18.
 //
 
-#include "./../Minigames/Testgame/test.hpp"
-#include "menue.hpp"
+#include "Minigames/Testgame/test.hpp"
+#include "menue/header/menue.hpp"
 
 menue::menue() {
     //SDL init stuff
@@ -38,7 +38,7 @@ void menue::display() {
 }
 
 void menue::handleEvents() {
-    if(SDL_PollEvent(&this->event)){
+    while (SDL_PollEvent(&this->event)) {
         switch(this->event.type){
             case SDL_QUIT: this->running = false; break;
             case SDL_KEYDOWN: this->keys[this->event.key.keysym.sym] = 1; break;
@@ -47,8 +47,15 @@ void menue::handleEvents() {
         }
     }
     if(this->keys[SDLK_p]){
-        this->spiel = new test(this->win, this->renner, &this->running);
-        this->spiel->run();
-        delete this->spiel;
+        this->executeGame();
     }
+}
+
+void menue::executeGame() {
+    switch (this->selection) {
+        case 0:
+            this->spiel = new test(this->win, this->renner, &this->running);
+    }
+    this->spiel->run();
+    delete this->spiel;
 }

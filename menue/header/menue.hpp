@@ -5,7 +5,7 @@
 #ifndef MINIGAME_COLLECTION_MENUE_HPP
 #define MINIGAME_COLLECTION_MENUE_HPP
 
-#include "./../core/header/definitions.hpp"
+#include "core/header/definitions.hpp"
 
 #include <SDL2/SDL.h>
 #include <unordered_map>
@@ -22,12 +22,15 @@ public:
 
 private:
     void handleEvents();
+
+    void executeGame();
     SDL_Window *win;
     SDL_Renderer *renner;
     SDL_Event event;
     std::unordered_map<int, int> keys;
     bool running = true;
     game *spiel;
+    int selection = 0;
 };
 
 #endif //MINIGAME_COLLECTION_MENUE_HPP

@@ -14,6 +14,8 @@ class game{
 public:
     game(SDL_Window *win, SDL_Renderer *renner, bool* running);
 
+    virtual ~game() = default;
+
     virtual void run() = 0;
 
 protected:
@@ -26,21 +28,5 @@ protected:
     std::unordered_map<int, int> keys;
     bool *running;
 };
-
-game::game(SDL_Window *win, SDL_Renderer *renner, bool* running) {
-    this->win = win;
-    this->renner = renner;
-    this->running = running;
-}
-
-void game::handleEvents() {
-    if(SDL_PollEvent(&this->event)){
-        switch(this->event.type){
-            case SDL_QUIT: *this->running = false; break;
-            case SDL_KEYDOWN: this->keys[this->event.key.keysym.sym] = 1; break;
-            case SDL_KEYUP: this->keys[this->event.key.keysym.sym] = 0; break;
-        }
-    }
-}
 
 #endif //MINIGAME_COLLECTION_GAME_HPP

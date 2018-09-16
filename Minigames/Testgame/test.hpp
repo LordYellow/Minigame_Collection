@@ -11,10 +11,14 @@ class test : public game{
 public:
     test(SDL_Window *win, SDL_Renderer *renner, bool* running);
 
+    ~test() override = default;
+
     void run() override;
 
 private:
     void handleEvents() override;
+
+    uint color = 50;
 };
 
 #endif //MINIGAME_COLLECTION_TEST_HPP
