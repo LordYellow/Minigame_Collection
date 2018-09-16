@@ -11,6 +11,17 @@ menue::menue() {
     if(win == nullptr){std::cout << "winerror: " << SDL_GetError() << std::endl; SDL_Quit(); return;}
     this->renner = SDL_CreateRenderer(this->win, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     if(renner == nullptr){SDL_DestroyWindow(this->win); std::cout << "renderererror: " << SDL_GetError() << std::endl; SDL_Quit(); return;}
+    SDL_SetWindowResizable(this->win, SDL_TRUE);
+    if(SDL_GetWindowFlags(this->win) & SDL_WINDOW_FULLSCREEN_DESKTOP){
+        SDL_SetWindowFullscreen(this->win, 0);
+    }else{
+        SDL_SetWindowFullscreen(this->win, SDL_WINDOW_FULLSCREEN_DESKTOP);
+    }
+    if(SDL_GetWindowFlags(this->win) & SDL_WINDOW_FULLSCREEN_DESKTOP){
+        SDL_SetWindowFullscreen(this->win, 0);
+    }else{
+        SDL_SetWindowFullscreen(this->win, SDL_WINDOW_FULLSCREEN_DESKTOP);
+    }
 }
 
 menue::~menue() {
