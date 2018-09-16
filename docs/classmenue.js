@@ -8,5 +8,6 @@ var classmenue =
     [ "renner", "classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784", null ],
     [ "event", "classmenue.html#a7cd564b6924e4bfb042350ee90b59330", null ],
     [ "keys", "classmenue.html#a52f4870547585515eaf9349085dcbf95", null ],
-    [ "running", "classmenue.html#ad4bbe9ec5996955e57f9496545401ecd", null ]
+    [ "running", "classmenue.html#ad4bbe9ec5996955e57f9496545401ecd", null ],
+    [ "spiel", "classmenue.html#af544295afb2eb31374b536d4fbb28965", null ]
 ];

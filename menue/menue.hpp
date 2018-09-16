@@ -9,6 +9,9 @@
 
 #include <SDL2/SDL.h>
 #include <unordered_map>
+//#include "./../core/header/game.hpp"
+
+class game;
 
 class menue{
 public:
@@ -17,13 +20,14 @@ public:
 
     void display();
 
-    void handleEvents();
 private:
+    void handleEvents();
     SDL_Window *win;
     SDL_Renderer *renner;
     SDL_Event event;
     std::unordered_map<int, int> keys;
     bool running = true;
+    game *spiel;
 };
 
 #endif //MINIGAME_COLLECTION_MENUE_HPP

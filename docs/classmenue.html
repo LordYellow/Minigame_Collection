@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('classmenue.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmenue-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -100,7 +101,8 @@ Collaboration diagram for menue:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmenue__coll__graph.png" border="0" usemap="#menue_coll__map" alt="Collaboration graph"/></div>
 <map name="menue_coll__map" id="menue_coll__map">
-<area shape="rect" id="node3" title="STL class. " alt="" coords="5,140,146,227"/>
+<area shape="rect" id="node2" href="classgame.html" title="{game\n|# win\l# renner\l# event\l# running\l|+ game()\l+ run()\l# handleEvents()\l}" alt="" coords="113,449,235,589"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="5,140,146,227"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -112,6 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1457184039ff5796566abb1bbef748a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1044413c9f875522539864a6e173040b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmenue.html#a1044413c9f875522539864a6e173040b">display</a> ()</td></tr>
 <tr class="separator:a1044413c9f875522539864a6e173040b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
 <tr class="memitem:af5b9ae796f896dd1037a7d876cb9499f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmenue.html#af5b9ae796f896dd1037a7d876cb9499f">handleEvents</a> ()</td></tr>
 <tr class="separator:af5b9ae796f896dd1037a7d876cb9499f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -127,10 +132,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a52f4870547585515eaf9349085dcbf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4bbe9ec5996955e57f9496545401ecd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmenue.html#ad4bbe9ec5996955e57f9496545401ecd">running</a> = true</td></tr>
 <tr class="separator:ad4bbe9ec5996955e57f9496545401ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af544295afb2eb31374b536d4fbb28965"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame.html">game</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmenue.html#af544295afb2eb31374b536d4fbb28965">spiel</a></td></tr>
+<tr class="separator:af544295afb2eb31374b536d4fbb28965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="menue_8hpp_source.html#l00013">13</a> of file <a class="el" href="menue_8hpp_source.html">menue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menue_8hpp_source.html#l00016">16</a> of file <a class="el" href="menue_8hpp_source.html">menue.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a08234121db3a166d9919368a080fe5c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08234121db3a166d9919368a080fe5c6">&#9670;&nbsp;</a></span>menue()</h2>
@@ -147,11 +154,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="menue_8cpp_source.html#l00007">7</a> of file <a class="el" href="menue_8cpp_source.html">menue.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menue_8cpp_source.html#l00008">8</a> of file <a class="el" href="menue_8cpp_source.html">menue.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="menue_8hpp_source.html#l00023">renner</a>, and <a class="el" href="menue_8hpp_source.html#l00022">win</a>.</p>
-<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;             {</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="comment">//SDL init stuff</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">if</span>(SDL_Init(SDL_INIT_VIDEO) != 0){std::cout &lt;&lt; <span class="stringliteral">&quot;error: &quot;</span> &lt;&lt; SDL_GetError() &lt;&lt; std::endl; <span class="keywordflow">return</span>;}</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    this-&gt;<a class="code" href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">win</a> = SDL_CreateWindow(<span class="stringliteral">&quot;Titel&quot;</span>,100,200,600,800,SDL_WINDOW_SHOWN);</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">win</a> == <span class="keyword">nullptr</span>){std::cout &lt;&lt; <span class="stringliteral">&quot;winerror: &quot;</span> &lt;&lt; SDL_GetError() &lt;&lt; std::endl; SDL_Quit(); <span class="keywordflow">return</span>;}</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    this-&gt;<a class="code" href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">renner</a> = SDL_CreateRenderer(this-&gt;<a class="code" href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">win</a>, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">renner</a> == <span class="keyword">nullptr</span>){SDL_DestroyWindow(this-&gt;<a class="code" href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">win</a>); std::cout &lt;&lt; <span class="stringliteral">&quot;renderererror: &quot;</span> &lt;&lt; SDL_GetError() &lt;&lt; std::endl; SDL_Quit(); <span class="keywordflow">return</span>;}</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div><div class="ttc" id="classmenue_html_ac57cc4461ba706f165f9b06f218b116e"><div class="ttname"><a href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">menue::win</a></div><div class="ttdeci">SDL_Window * win</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00022">menue.hpp:22</a></div></div>
-<div class="ttc" id="classmenue_html_a9c0a2feeddc26d6e664c83e6ff8ff784"><div class="ttname"><a href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">menue::renner</a></div><div class="ttdeci">SDL_Renderer * renner</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00023">menue.hpp:23</a></div></div>
+<p class="reference">References <a class="el" href="menue_8hpp_source.html#l00026">renner</a>, and <a class="el" href="menue_8hpp_source.html#l00025">win</a>.</p>
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;             {</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="comment">//SDL init stuff</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">if</span>(SDL_Init(SDL_INIT_VIDEO) != 0){std::cout &lt;&lt; <span class="stringliteral">&quot;error: &quot;</span> &lt;&lt; SDL_GetError() &lt;&lt; std::endl; <span class="keywordflow">return</span>;}</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    this-&gt;<a class="code" href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">win</a> = SDL_CreateWindow(<span class="stringliteral">&quot;Titel&quot;</span>,100,200,600,800,SDL_WINDOW_SHOWN);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">win</a> == <span class="keyword">nullptr</span>){std::cout &lt;&lt; <span class="stringliteral">&quot;winerror: &quot;</span> &lt;&lt; SDL_GetError() &lt;&lt; std::endl; SDL_Quit(); <span class="keywordflow">return</span>;}</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    this-&gt;<a class="code" href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">renner</a> = SDL_CreateRenderer(this-&gt;<a class="code" href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">win</a>, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">renner</a> == <span class="keyword">nullptr</span>){SDL_DestroyWindow(this-&gt;<a class="code" href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">win</a>); std::cout &lt;&lt; <span class="stringliteral">&quot;renderererror: &quot;</span> &lt;&lt; SDL_GetError() &lt;&lt; std::endl; SDL_Quit(); <span class="keywordflow">return</span>;}</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    SDL_SetWindowResizable(this-&gt;<a class="code" href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">win</a>, SDL_TRUE);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    SDL_SetWindowFullscreen(this-&gt;<a class="code" href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">win</a>, SDL_GetWindowFlags(this-&gt;<a class="code" href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">win</a>) &amp; SDL_WINDOW_FULLSCREEN_DESKTOP ? 0</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                                                                                     : SDL_WINDOW_FULLSCREEN_DESKTOP);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    SDL_SetWindowFullscreen(this-&gt;<a class="code" href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">win</a>, SDL_GetWindowFlags(this-&gt;<a class="code" href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">win</a>) &amp; SDL_WINDOW_FULLSCREEN_DESKTOP ? 0</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                                                                                     : SDL_WINDOW_FULLSCREEN_DESKTOP);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div><div class="ttc" id="classmenue_html_ac57cc4461ba706f165f9b06f218b116e"><div class="ttname"><a href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">menue::win</a></div><div class="ttdeci">SDL_Window * win</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00025">menue.hpp:25</a></div></div>
+<div class="ttc" id="classmenue_html_a9c0a2feeddc26d6e664c83e6ff8ff784"><div class="ttname"><a href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">menue::renner</a></div><div class="ttdeci">SDL_Renderer * renner</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00026">menue.hpp:26</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -170,11 +177,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="menue_8cpp_source.html#l00016">16</a> of file <a class="el" href="menue_8cpp_source.html">menue.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menue_8cpp_source.html#l00022">22</a> of file <a class="el" href="menue_8cpp_source.html">menue.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="menue_8hpp_source.html#l00023">renner</a>, and <a class="el" href="menue_8hpp_source.html#l00022">win</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;              {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    SDL_DestroyRenderer(this-&gt;<a class="code" href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">renner</a>);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    SDL_DestroyWindow(this-&gt;<a class="code" href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">win</a>);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    SDL_Quit();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div><div class="ttc" id="classmenue_html_ac57cc4461ba706f165f9b06f218b116e"><div class="ttname"><a href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">menue::win</a></div><div class="ttdeci">SDL_Window * win</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00022">menue.hpp:22</a></div></div>
-<div class="ttc" id="classmenue_html_a9c0a2feeddc26d6e664c83e6ff8ff784"><div class="ttname"><a href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">menue::renner</a></div><div class="ttdeci">SDL_Renderer * renner</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00023">menue.hpp:23</a></div></div>
+<p class="reference">References <a class="el" href="menue_8hpp_source.html#l00026">renner</a>, and <a class="el" href="menue_8hpp_source.html#l00025">win</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;              {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    SDL_DestroyRenderer(this-&gt;<a class="code" href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">renner</a>);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    SDL_DestroyWindow(this-&gt;<a class="code" href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">win</a>);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    SDL_Quit();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div><div class="ttc" id="classmenue_html_ac57cc4461ba706f165f9b06f218b116e"><div class="ttname"><a href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">menue::win</a></div><div class="ttdeci">SDL_Window * win</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00025">menue.hpp:25</a></div></div>
+<div class="ttc" id="classmenue_html_a9c0a2feeddc26d6e664c83e6ff8ff784"><div class="ttname"><a href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">menue::renner</a></div><div class="ttdeci">SDL_Renderer * renner</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00026">menue.hpp:26</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -194,20 +201,21 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="menue_8cpp_source.html#l00022">22</a> of file <a class="el" href="menue_8cpp_source.html">menue.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menue_8cpp_source.html#l00028">28</a> of file <a class="el" href="menue_8cpp_source.html">menue.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="menue_8cpp_source.html#l00034">handleEvents()</a>, <a class="el" href="menue_8hpp_source.html#l00023">renner</a>, and <a class="el" href="menue_8hpp_source.html#l00026">running</a>.</p>
+<p class="reference">References <a class="el" href="menue_8cpp_source.html#l00040">handleEvents()</a>, <a class="el" href="menue_8hpp_source.html#l00026">renner</a>, and <a class="el" href="menue_8hpp_source.html#l00029">running</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="main_8cpp_source.html#l00005">main()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                    {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">while</span>(this-&gt;<a class="code" href="classmenue.html#ad4bbe9ec5996955e57f9496545401ecd">running</a>){</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        SDL_SetRenderDrawColor(this-&gt;<a class="code" href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">renner</a>, 0, 0, 0, 0);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        SDL_RenderClear(this-&gt;<a class="code" href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">renner</a>);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        this-&gt;<a class="code" href="classmenue.html#af5b9ae796f896dd1037a7d876cb9499f">handleEvents</a>();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        SDL_RenderPresent(this-&gt;<a class="code" href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">renner</a>);\</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        SDL_Delay(1);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div><div class="ttc" id="classmenue_html_ad4bbe9ec5996955e57f9496545401ecd"><div class="ttname"><a href="classmenue.html#ad4bbe9ec5996955e57f9496545401ecd">menue::running</a></div><div class="ttdeci">bool running</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00026">menue.hpp:26</a></div></div>
-<div class="ttc" id="classmenue_html_a9c0a2feeddc26d6e664c83e6ff8ff784"><div class="ttname"><a href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">menue::renner</a></div><div class="ttdeci">SDL_Renderer * renner</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00023">menue.hpp:23</a></div></div>
-<div class="ttc" id="classmenue_html_af5b9ae796f896dd1037a7d876cb9499f"><div class="ttname"><a href="classmenue.html#af5b9ae796f896dd1037a7d876cb9499f">menue::handleEvents</a></div><div class="ttdeci">void handleEvents()</div><div class="ttdef"><b>Definition:</b> <a href="menue_8cpp_source.html#l00034">menue.cpp:34</a></div></div>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                    {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">while</span>(this-&gt;<a class="code" href="classmenue.html#ad4bbe9ec5996955e57f9496545401ecd">running</a>){</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        SDL_SetRenderDrawColor(this-&gt;<a class="code" href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">renner</a>, 0, 0, 0, 0);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        SDL_RenderClear(this-&gt;<a class="code" href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">renner</a>);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        this-&gt;<a class="code" href="classmenue.html#af5b9ae796f896dd1037a7d876cb9499f">handleEvents</a>();</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        SDL_RenderPresent(this-&gt;<a class="code" href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">renner</a>);\</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        SDL_Delay(1);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div><div class="ttc" id="classmenue_html_ad4bbe9ec5996955e57f9496545401ecd"><div class="ttname"><a href="classmenue.html#ad4bbe9ec5996955e57f9496545401ecd">menue::running</a></div><div class="ttdeci">bool running</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00029">menue.hpp:29</a></div></div>
+<div class="ttc" id="classmenue_html_a9c0a2feeddc26d6e664c83e6ff8ff784"><div class="ttname"><a href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">menue::renner</a></div><div class="ttdeci">SDL_Renderer * renner</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00026">menue.hpp:26</a></div></div>
+<div class="ttc" id="classmenue_html_af5b9ae796f896dd1037a7d876cb9499f"><div class="ttname"><a href="classmenue.html#af5b9ae796f896dd1037a7d876cb9499f">menue::handleEvents</a></div><div class="ttdeci">void handleEvents()</div><div class="ttdef"><b>Definition:</b> <a href="menue_8cpp_source.html#l00040">menue.cpp:40</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmenue_a1044413c9f875522539864a6e173040b_cgraph.png" border="0" usemap="#classmenue_a1044413c9f875522539864a6e173040b_cgraph" alt=""/></div>
 <map name="classmenue_a1044413c9f875522539864a6e173040b_cgraph" id="classmenue_a1044413c9f875522539864a6e173040b_cgraph">
 <area shape="rect" id="node2" href="classmenue.html#af5b9ae796f896dd1037a7d876cb9499f" title="menue::handleEvents" alt="" coords="164,5,315,31"/>
+<area shape="rect" id="node3" href="classgame.html#afd16ddc6a279481142319631373d6376" title="game::run" alt="" coords="363,5,444,31"/>
 </map>
 </div>
 <div class="dynheader">
@@ -226,6 +234,9 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void menue::handleEvents </td>
@@ -234,17 +245,35 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="menue_8cpp_source.html#l00034">34</a> of file <a class="el" href="menue_8cpp_source.html">menue.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menue_8cpp_source.html#l00040">40</a> of file <a class="el" href="menue_8cpp_source.html">menue.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="menue_8hpp_source.html#l00024">event</a>, <a class="el" href="menue_8hpp_source.html#l00025">keys</a>, and <a class="el" href="menue_8hpp_source.html#l00026">running</a>.</p>
+<p class="reference">References <a class="el" href="menue_8hpp_source.html#l00027">event</a>, <a class="el" href="menue_8hpp_source.html#l00028">keys</a>, <a class="el" href="menue_8hpp_source.html#l00026">renner</a>, <a class="el" href="classgame.html#afd16ddc6a279481142319631373d6376">game::run()</a>, <a class="el" href="menue_8hpp_source.html#l00029">running</a>, <a class="el" href="menue_8hpp_source.html#l00030">spiel</a>, and <a class="el" href="menue_8hpp_source.html#l00025">win</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="menue_8cpp_source.html#l00022">display()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                         {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span>(SDL_PollEvent(&amp;this-&gt;<a class="code" href="classmenue.html#a7cd564b6924e4bfb042350ee90b59330">event</a>)){</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">switch</span>(this-&gt;<a class="code" href="classmenue.html#a7cd564b6924e4bfb042350ee90b59330">event</a>.type){</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">case</span> SDL_QUIT: this-&gt;<a class="code" href="classmenue.html#ad4bbe9ec5996955e57f9496545401ecd">running</a> = <span class="keyword">false</span>; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">case</span> SDL_KEYDOWN: this-&gt;<a class="code" href="classmenue.html#a52f4870547585515eaf9349085dcbf95">keys</a>[this-&gt;<span class="keyword">event</span>.key.keysym.sym] = 1; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">case</span> SDL_KEYUP: this-&gt;<a class="code" href="classmenue.html#a52f4870547585515eaf9349085dcbf95">keys</a>[this-&gt;<span class="keyword">event</span>.key.keysym.sym] = 0; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div><div class="ttc" id="classmenue_html_a52f4870547585515eaf9349085dcbf95"><div class="ttname"><a href="classmenue.html#a52f4870547585515eaf9349085dcbf95">menue::keys</a></div><div class="ttdeci">std::unordered_map&lt; int, int &gt; keys</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00025">menue.hpp:25</a></div></div>
-<div class="ttc" id="classmenue_html_a7cd564b6924e4bfb042350ee90b59330"><div class="ttname"><a href="classmenue.html#a7cd564b6924e4bfb042350ee90b59330">menue::event</a></div><div class="ttdeci">SDL_Event event</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00024">menue.hpp:24</a></div></div>
-<div class="ttc" id="classmenue_html_ad4bbe9ec5996955e57f9496545401ecd"><div class="ttname"><a href="classmenue.html#ad4bbe9ec5996955e57f9496545401ecd">menue::running</a></div><div class="ttdeci">bool running</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00026">menue.hpp:26</a></div></div>
+<p class="reference">Referenced by <a class="el" href="menue_8cpp_source.html#l00028">display()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                         {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span>(SDL_PollEvent(&amp;this-&gt;<a class="code" href="classmenue.html#a7cd564b6924e4bfb042350ee90b59330">event</a>)){</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">switch</span>(this-&gt;<a class="code" href="classmenue.html#a7cd564b6924e4bfb042350ee90b59330">event</a>.type){</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">case</span> SDL_QUIT: this-&gt;<a class="code" href="classmenue.html#ad4bbe9ec5996955e57f9496545401ecd">running</a> = <span class="keyword">false</span>; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">case</span> SDL_KEYDOWN: this-&gt;<a class="code" href="classmenue.html#a52f4870547585515eaf9349085dcbf95">keys</a>[this-&gt;<span class="keyword">event</span>.key.keysym.sym] = 1; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">case</span> SDL_KEYUP: this-&gt;<a class="code" href="classmenue.html#a52f4870547585515eaf9349085dcbf95">keys</a>[this-&gt;<span class="keyword">event</span>.key.keysym.sym] = 0; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">default</span>: <span class="keywordflow">break</span>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span>(this-&gt;<a class="code" href="classmenue.html#a52f4870547585515eaf9349085dcbf95">keys</a>[SDLK_p]){</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        this-&gt;<a class="code" href="classmenue.html#af544295afb2eb31374b536d4fbb28965">spiel</a> = <span class="keyword">new</span> <a class="code" href="classtest.html">test</a>(this-&gt;<a class="code" href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">win</a>, this-&gt;<a class="code" href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">renner</a>, &amp;this-&gt;<a class="code" href="classmenue.html#ad4bbe9ec5996955e57f9496545401ecd">running</a>);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        this-&gt;<a class="code" href="classmenue.html#af544295afb2eb31374b536d4fbb28965">spiel</a>-&gt;<a class="code" href="classgame.html#afd16ddc6a279481142319631373d6376">run</a>();</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">delete</span> this-&gt;<a class="code" href="classmenue.html#af544295afb2eb31374b536d4fbb28965">spiel</a>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div><div class="ttc" id="classmenue_html_a52f4870547585515eaf9349085dcbf95"><div class="ttname"><a href="classmenue.html#a52f4870547585515eaf9349085dcbf95">menue::keys</a></div><div class="ttdeci">std::unordered_map&lt; int, int &gt; keys</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00028">menue.hpp:28</a></div></div>
+<div class="ttc" id="classmenue_html_a7cd564b6924e4bfb042350ee90b59330"><div class="ttname"><a href="classmenue.html#a7cd564b6924e4bfb042350ee90b59330">menue::event</a></div><div class="ttdeci">SDL_Event event</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00027">menue.hpp:27</a></div></div>
+<div class="ttc" id="classmenue_html_ac57cc4461ba706f165f9b06f218b116e"><div class="ttname"><a href="classmenue.html#ac57cc4461ba706f165f9b06f218b116e">menue::win</a></div><div class="ttdeci">SDL_Window * win</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00025">menue.hpp:25</a></div></div>
+<div class="ttc" id="classmenue_html_ad4bbe9ec5996955e57f9496545401ecd"><div class="ttname"><a href="classmenue.html#ad4bbe9ec5996955e57f9496545401ecd">menue::running</a></div><div class="ttdeci">bool running</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00029">menue.hpp:29</a></div></div>
+<div class="ttc" id="classgame_html_afd16ddc6a279481142319631373d6376"><div class="ttname"><a href="classgame.html#afd16ddc6a279481142319631373d6376">game::run</a></div><div class="ttdeci">virtual void run()=0</div></div>
+<div class="ttc" id="classtest_html"><div class="ttname"><a href="classtest.html">test</a></div><div class="ttdef"><b>Definition:</b> <a href="test_8hpp_source.html#l00010">test.hpp:10</a></div></div>
+<div class="ttc" id="classmenue_html_a9c0a2feeddc26d6e664c83e6ff8ff784"><div class="ttname"><a href="classmenue.html#a9c0a2feeddc26d6e664c83e6ff8ff784">menue::renner</a></div><div class="ttdeci">SDL_Renderer * renner</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00026">menue.hpp:26</a></div></div>
+<div class="ttc" id="classmenue_html_af544295afb2eb31374b536d4fbb28965"><div class="ttname"><a href="classmenue.html#af544295afb2eb31374b536d4fbb28965">menue::spiel</a></div><div class="ttdeci">game * spiel</div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00030">menue.hpp:30</a></div></div>
 </div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmenue_af5b9ae796f896dd1037a7d876cb9499f_cgraph.png" border="0" usemap="#classmenue_af5b9ae796f896dd1037a7d876cb9499f_cgraph" alt=""/></div>
+<map name="classmenue_af5b9ae796f896dd1037a7d876cb9499f_cgraph" id="classmenue_af5b9ae796f896dd1037a7d876cb9499f_cgraph">
+<area shape="rect" id="node2" href="classgame.html#afd16ddc6a279481142319631373d6376" title="game::run" alt="" coords="204,5,285,31"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmenue_af5b9ae796f896dd1037a7d876cb9499f_icgraph.png" border="0" usemap="#classmenue_af5b9ae796f896dd1037a7d876cb9499f_icgraph" alt=""/></div>
@@ -277,9 +306,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="menue_8hpp_source.html#l00022">22</a> of file <a class="el" href="menue_8hpp_source.html">menue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menue_8hpp_source.html#l00025">25</a> of file <a class="el" href="menue_8hpp_source.html">menue.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="menue_8cpp_source.html#l00007">menue()</a>, and <a class="el" href="menue_8cpp_source.html#l00016">~menue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="menue_8cpp_source.html#l00040">handleEvents()</a>, <a class="el" href="menue_8cpp_source.html#l00008">menue()</a>, and <a class="el" href="menue_8cpp_source.html#l00022">~menue()</a>.</p>
 
 </div>
 </div>
@@ -303,9 +332,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="menue_8hpp_source.html#l00023">23</a> of file <a class="el" href="menue_8hpp_source.html">menue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menue_8hpp_source.html#l00026">26</a> of file <a class="el" href="menue_8hpp_source.html">menue.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="menue_8cpp_source.html#l00022">display()</a>, <a class="el" href="menue_8cpp_source.html#l00007">menue()</a>, and <a class="el" href="menue_8cpp_source.html#l00016">~menue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="menue_8cpp_source.html#l00028">display()</a>, <a class="el" href="menue_8cpp_source.html#l00040">handleEvents()</a>, <a class="el" href="menue_8cpp_source.html#l00008">menue()</a>, and <a class="el" href="menue_8cpp_source.html#l00022">~menue()</a>.</p>
 
 </div>
 </div>
@@ -329,9 +358,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="menue_8hpp_source.html#l00024">24</a> of file <a class="el" href="menue_8hpp_source.html">menue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menue_8hpp_source.html#l00027">27</a> of file <a class="el" href="menue_8hpp_source.html">menue.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="menue_8cpp_source.html#l00034">handleEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="menue_8cpp_source.html#l00040">handleEvents()</a>.</p>
 
 </div>
 </div>
@@ -355,9 +384,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="menue_8hpp_source.html#l00025">25</a> of file <a class="el" href="menue_8hpp_source.html">menue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menue_8hpp_source.html#l00028">28</a> of file <a class="el" href="menue_8hpp_source.html">menue.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="menue_8cpp_source.html#l00034">handleEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="menue_8cpp_source.html#l00040">handleEvents()</a>.</p>
 
 </div>
 </div>
@@ -381,9 +410,35 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="menue_8hpp_source.html#l00026">26</a> of file <a class="el" href="menue_8hpp_source.html">menue.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="menue_8hpp_source.html#l00029">29</a> of file <a class="el" href="menue_8hpp_source.html">menue.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="menue_8cpp_source.html#l00022">display()</a>, and <a class="el" href="menue_8cpp_source.html#l00034">handleEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="menue_8cpp_source.html#l00028">display()</a>, and <a class="el" href="menue_8cpp_source.html#l00040">handleEvents()</a>.</p>
+
+</div>
+</div>
+<a id="af544295afb2eb31374b536d4fbb28965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af544295afb2eb31374b536d4fbb28965">&#9670;&nbsp;</a></span>spiel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgame.html">game</a>* menue::spiel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="menue_8hpp_source.html#l00030">30</a> of file <a class="el" href="menue_8hpp_source.html">menue.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="menue_8cpp_source.html#l00040">handleEvents()</a>.</p>
 
 </div>
 </div>
@@ -397,7 +452,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classmenue.html">menue</a></li>
-    <li class="footer">Generated on Sat Sep 15 2018 17:51:18 for MinigameCollection by
+    <li class="footer">Generated on Sun Sep 16 2018 11:31:30 for MinigameCollection by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

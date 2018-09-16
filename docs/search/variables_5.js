@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['win',['win',['../classmenue.html#ac57cc4461ba706f165f9b06f218b116e',1,'menue']]]
+  ['spiel',['spiel',['../classmenue.html#af544295afb2eb31374b536d4fbb28965',1,'menue']]]
 ];

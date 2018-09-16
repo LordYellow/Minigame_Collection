@@ -2,6 +2,7 @@
 // Created by Raphael Straub on 15.09.18.
 //
 
+#include "./../Minigames/Testgame/test.hpp"
 #include "menue.hpp"
 
 menue::menue() {
@@ -12,16 +13,10 @@ menue::menue() {
     this->renner = SDL_CreateRenderer(this->win, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     if(renner == nullptr){SDL_DestroyWindow(this->win); std::cout << "renderererror: " << SDL_GetError() << std::endl; SDL_Quit(); return;}
     SDL_SetWindowResizable(this->win, SDL_TRUE);
-    if(SDL_GetWindowFlags(this->win) & SDL_WINDOW_FULLSCREEN_DESKTOP){
-        SDL_SetWindowFullscreen(this->win, 0);
-    }else{
-        SDL_SetWindowFullscreen(this->win, SDL_WINDOW_FULLSCREEN_DESKTOP);
-    }
-    if(SDL_GetWindowFlags(this->win) & SDL_WINDOW_FULLSCREEN_DESKTOP){
-        SDL_SetWindowFullscreen(this->win, 0);
-    }else{
-        SDL_SetWindowFullscreen(this->win, SDL_WINDOW_FULLSCREEN_DESKTOP);
-    }
+    SDL_SetWindowFullscreen(this->win, SDL_GetWindowFlags(this->win) & SDL_WINDOW_FULLSCREEN_DESKTOP ? 0
+                                                                                                     : SDL_WINDOW_FULLSCREEN_DESKTOP);
+    SDL_SetWindowFullscreen(this->win, SDL_GetWindowFlags(this->win) & SDL_WINDOW_FULLSCREEN_DESKTOP ? 0
+                                                                                                     : SDL_WINDOW_FULLSCREEN_DESKTOP);
 }
 
 menue::~menue() {
@@ -48,6 +43,12 @@ void menue::handleEvents() {
             case SDL_QUIT: this->running = false; break;
             case SDL_KEYDOWN: this->keys[this->event.key.keysym.sym] = 1; break;
             case SDL_KEYUP: this->keys[this->event.key.keysym.sym] = 0; break;
+            default: break;
         }
+    }
+    if(this->keys[SDLK_p]){
+        this->spiel = new test(this->win, this->renner, &this->running);
+        this->spiel->run();
+        delete this->spiel;
     }
 }
