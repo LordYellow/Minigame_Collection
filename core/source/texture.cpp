@@ -16,6 +16,8 @@ void texture::renderTexture(SDL_Renderer *renner, std::string kindOfTexture, SDL
     rectangle.h = s->h;
     rectangle.w = s->w;
     SDL_RenderCopy(renner, texture1, &rectangle, &dst);
+    SDL_FreeSurface(s);
+    SDL_DestroyTexture(texture1);
 }
 
 void texture::drawRectangle(SDL_Renderer *renner, SDL_Rect dst, SDL_Color color, bool fill) {
