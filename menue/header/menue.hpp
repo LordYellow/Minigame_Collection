@@ -28,6 +28,8 @@ private:
 
     void displayGamePreview();
 
+    std::vector<std::string> getDescriptionInLines();
+
     std::vector<gamePreview> gameVector;
     SDL_Window *win;
     SDL_Renderer *renner;
@@ -35,7 +37,7 @@ private:
     std::unordered_map<int, int> keys;
     bool running = true;
     game *spiel;
-    int selection = 0;
+    int selection = 300, winx, winy, pia = 0, currentx = 1000;
 };
 
 #endif //MINIGAME_COLLECTION_MENUE_HPP
