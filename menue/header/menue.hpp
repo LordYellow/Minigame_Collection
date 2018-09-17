@@ -6,10 +6,11 @@
 #define MINIGAME_COLLECTION_MENUE_HPP
 
 #include "core/header/definitions.hpp"
+#include "gamePreview.hpp"
 
 #include <SDL2/SDL.h>
 #include <unordered_map>
-//#include "./../core/header/game.hpp"
+#include <vector>
 
 class game;
 
@@ -24,6 +25,10 @@ private:
     void handleEvents();
 
     void executeGame();
+
+    void displayGamePreview();
+
+    std::vector<gamePreview> gameVector;
     SDL_Window *win;
     SDL_Renderer *renner;
     SDL_Event event;

@@ -2,8 +2,9 @@
 // Created by Raphael Straub on 15.09.18.
 //
 
+#include <menue/header/menue.hpp>
+
 #include "Minigames/Testgame/test.hpp"
-#include "menue/header/menue.hpp"
 
 menue::menue() {
     //SDL init stuff
@@ -17,6 +18,8 @@ menue::menue() {
                                                                                                      : SDL_WINDOW_FULLSCREEN_DESKTOP);
     SDL_SetWindowFullscreen(this->win, SDL_GetWindowFlags(this->win) & SDL_WINDOW_FULLSCREEN_DESKTOP ? 0
                                                                                                      : SDL_WINDOW_FULLSCREEN_DESKTOP);
+    this->gameVector.emplace_back(0, "Testgame", "This is a Testgame", "testgame");
+    this->gameVector.emplace_back(0, "Testgame2", "This is another Testgame", "testgame");
 }
 
 menue::~menue() {
@@ -31,6 +34,7 @@ void menue::display() {
         SDL_RenderClear(this->renner);
 
         this->handleEvents();
+        this->displayGamePreview();
 
         SDL_RenderPresent(this->renner);\
         SDL_Delay(1);
@@ -43,6 +47,13 @@ void menue::handleEvents() {
             case SDL_QUIT: this->running = false; break;
             case SDL_KEYDOWN: this->keys[this->event.key.keysym.sym] = 1; break;
             case SDL_KEYUP: this->keys[this->event.key.keysym.sym] = 0; break;
+            case SDL_MOUSEWHEEL:
+                if (event.wheel.y < 0) {
+                    if (this->selection < this->gameVector.size() - 1)this->selection++;
+                } else if (event.wheel.y > 0) {
+                    if (this->selection > 0)this->selection--;
+                }
+                break;
             default: break;
         }
     }
@@ -58,4 +69,8 @@ void menue::executeGame() {
     }
     this->spiel->run();
     delete this->spiel;
+}
+
+void menue::displayGamePreview() {
+
 }
