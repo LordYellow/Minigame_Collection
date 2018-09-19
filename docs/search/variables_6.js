@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['win',['win',['../classgame.html#a641ee0bb8cf0be11aa9320ce913e3d95',1,'game::win()'],['../classmenue.html#ac57cc4461ba706f165f9b06f218b116e',1,'menue::win()']]]
+  ['keys',['keys',['../classgame.html#a6b62957d861bdcee30c7fdc4734f559f',1,'game::keys()'],['../classmenue.html#a52f4870547585515eaf9349085dcbf95',1,'menue::keys()']]]
 ];

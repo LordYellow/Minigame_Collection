@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7emenue',['~menue',['../classmenue.html#a1457184039ff5796566abb1bbef748a4',1,'menue']]]
+  ['yellowdebug',['YELLOWDEBUG',['../debug_8hpp.html#aa3df6225c8bcee82b99163807c1b2a13',1,'YELLOWDEBUG():&#160;debug.hpp'],['../definitions_8hpp.html#aa3df6225c8bcee82b99163807c1b2a13',1,'YELLOWDEBUG():&#160;definitions.hpp']]]
 ];

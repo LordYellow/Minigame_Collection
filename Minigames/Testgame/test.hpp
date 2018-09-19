@@ -7,6 +7,9 @@
 
 #include "./../../core/header/game.hpp"
 
+/**
+ * test class this wont be commented
+ */
 class test : public game{
 public:
     test(SDL_Window *win, SDL_Renderer *renner, bool* running);

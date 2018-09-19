@@ -1,5 +1,12 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$classmenue.html#a1044413c9f875522539864a6e173040b" title="menue::display" alt="" coords="104,5,215,31"/>
-<area shape="rect" id="node3" href="$classmenue.html#af5b9ae796f896dd1037a7d876cb9499f" title="menue::handleEvents" alt="" coords="263,5,413,31"/>
-<area shape="rect" id="node4" href="$classgame.html#afd16ddc6a279481142319631373d6376" title="game::run" alt="" coords="461,5,542,31"/>
+<area shape="rect" id="node2" href="$classmenue.html#a1044413c9f875522539864a6e173040b" title="menue::display" alt="" coords="104,116,215,141"/>
+<area shape="rect" id="node11" href="$main_8cpp.html#adc48771fce409defc0f0102cc2ab27ff" title="filter" alt="" coords="136,165,182,191"/>
+<area shape="rect" id="node3" href="$classmenue.html#af5b9ae796f896dd1037a7d876cb9499f" title="menue::handleEvents" alt="" coords="285,80,435,105"/>
+<area shape="rect" id="node8" href="$classmenue.html#a3e7219c43d17aa5ecb225203e6802fea" title="menue::displayGamePreview" alt="" coords="263,153,457,179"/>
+<area shape="rect" id="node4" href="$classmenue.html#a46f4dd81d1b05b32a7404bed409ef416" title="menue::goToTheRight" alt="" coords="505,5,658,31"/>
+<area shape="rect" id="node5" href="$classmenue.html#af3d0aaf95bd34454f96b3415a39e8672" title="menue::goToTheLeft" alt="" coords="510,55,653,80"/>
+<area shape="rect" id="node6" href="$classmenue.html#a064341a0a73c16ec686b7958d527dcdb" title="menue::executeGame" alt="" coords="505,104,658,129"/>
+<area shape="rect" id="node7" href="$classgame.html#afd16ddc6a279481142319631373d6376" title="game::run" alt="" coords="706,104,787,129"/>
+<area shape="rect" id="node9" href="$namespacetexture.html#ae6624177ab2ef64dcdb374fd1a71de8f" title="texture::renderTexture" alt="" coords="506,153,657,179"/>
+<area shape="rect" id="node10" href="$namespacetexture.html#a1a1892b823abb0592fc9155848e1b805" title="texture::writeText" alt="" coords="521,203,643,228"/>
 </map>

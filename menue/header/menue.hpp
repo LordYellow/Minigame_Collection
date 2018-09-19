@@ -14,23 +14,52 @@
 
 class game;
 
+/**
+ * with this class you are able to select the game you wanna play
+ */
 class menue{
 public:
+
+    /**
+     * the constructor creates a window
+     */
     menue();
+
+    /**
+     * the destructor will take care about the sdl stuff
+     */
     ~menue();
 
+    /**
+     * this function will display the menue. call it only one time. if you want to call if again,
+     * after you closed the first window you have to create a new menue class
+     */
     void display();
 
 private:
+
+    /**
+     * this will handle the events of the menue. its only called by display()
+     */
     void handleEvents();
 
+    /**
+     * this will execute the selected game
+     */
     void executeGame();
 
+    /**
+     * this will fill your screen with the game preview
+     */
     void displayGamePreview();
 
-    std::vector<std::string> getDescriptionInLines();
+    void goToTheRight();
 
+    void goToTheLeft();
+
+    ///here the gamePreviews are stored.
     std::vector<gamePreview> gameVector;
+
     SDL_Window *win;
     SDL_Renderer *renner;
     SDL_Event event;

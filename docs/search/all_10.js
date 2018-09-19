@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['yellowdebug',['YELLOWDEBUG',['../debug_8hpp.html#aa3df6225c8bcee82b99163807c1b2a13',1,'YELLOWDEBUG():&#160;debug.hpp'],['../definitions_8hpp.html#aa3df6225c8bcee82b99163807c1b2a13',1,'YELLOWDEBUG():&#160;definitions.hpp']]]
+  ['win',['win',['../classgame.html#a641ee0bb8cf0be11aa9320ce913e3d95',1,'game::win()'],['../classmenue.html#ac57cc4461ba706f165f9b06f218b116e',1,'menue::win()']]],
+  ['winx',['winx',['../classmenue.html#a74af26a102819ea6f5ae2974ce41f8c8',1,'menue']]],
+  ['winy',['winy',['../classmenue.html#aa991e293b27244b179f9fefaaa6351ae',1,'menue']]],
+  ['writetext',['writeText',['../namespacetexture.html#a1a1892b823abb0592fc9155848e1b805',1,'texture']]]
 ];

@@ -10,17 +10,36 @@
 #include <SDL2/SDL.h>
 #include <unordered_map>
 
+/**
+ * An abstract class for all Games
+ */
 class game{
 public:
+    /**
+     *
+     * @param win is the window you play the game in
+     * @param renner is the renderer for your game
+     * @param running is a pointer to the boolean determing if the game is running or not
+     */
     game(SDL_Window *win, SDL_Renderer *renner, bool* running);
 
+    /**
+     * default destructor
+     */
     virtual ~game() = default;
 
+    /**
+     * Here runs the game. This has to be called 1 time
+     */
     virtual void run() = 0;
 
 protected:
 
-    virtual void handleEvents();
+    /**
+     * This handele the events
+     */
+    virtual void handleEvents() = 0;
+
 
     SDL_Window *win;
     SDL_Renderer *renner;

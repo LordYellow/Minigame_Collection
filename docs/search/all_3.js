@@ -43,5 +43,8 @@ var searchData=
   ['debug_5funderline',['DEBUG_UNDERLINE',['../debug_8hpp.html#ab4f2c6aa5f29c4d6c0dfe934a0b827d1',1,'debug.hpp']]],
   ['dec',['DEC',['../CMakeCCompilerId_8c.html#ad1280362da42492bbc11aa78cbf776ad',1,'DEC():&#160;CMakeCCompilerId.c'],['../CMakeCXXCompilerId_8cpp.html#ad1280362da42492bbc11aa78cbf776ad',1,'DEC():&#160;CMakeCXXCompilerId.cpp']]],
   ['definitions_2ehpp',['definitions.hpp',['../definitions_8hpp.html',1,'']]],
-  ['display',['display',['../classmenue.html#a1044413c9f875522539864a6e173040b',1,'menue']]]
+  ['description',['description',['../classgamePreview.html#af562dd0142919b64b2b2a7771c506d9a',1,'gamePreview']]],
+  ['display',['display',['../classmenue.html#a1044413c9f875522539864a6e173040b',1,'menue']]],
+  ['displaygamepreview',['displayGamePreview',['../classmenue.html#a3e7219c43d17aa5ecb225203e6802fea',1,'menue']]],
+  ['drawrectangle',['drawRectangle',['../namespacetexture.html#a581a067998de78b17114285a9cc31135',1,'texture']]]
 ];

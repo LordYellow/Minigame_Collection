@@ -92,15 +92,16 @@ $(document).ready(function(){initNavTree('main_8cpp.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="definitions_8hpp_source.html">./core/header/definitions.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="menue_8hpp_source.html">./menue/menue.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="menue_8hpp_source.html">menue/header/menue.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#main_8cpp" alt=""/></div>
 <map name="main_8cpp" id="main_8cpp">
-<area shape="rect" id="node2" href="definitions_8hpp.html" title="./core/header/definitions.hpp" alt="" coords="5,152,195,177"/>
-<area shape="rect" id="node6" href="menue_8hpp.html" title="./menue/menue.hpp" alt="" coords="181,79,321,104"/>
-<area shape="rect" id="node3" href="debug_8hpp.html" title="./debug.hpp" alt="" coords="54,225,146,251"/>
+<area shape="rect" id="node2" href="definitions_8hpp.html" title="./core/header/definitions.hpp" alt="" coords="5,225,195,251"/>
+<area shape="rect" id="node6" href="menue_8hpp.html" title="menue/header/menue.hpp" alt="" coords="181,79,358,104"/>
+<area shape="rect" id="node3" href="debug_8hpp.html" title="./debug.hpp" alt="" coords="54,299,146,324"/>
+<area shape="rect" id="node7" href="gamePreview_8hpp.html" title="gamePreview.hpp" alt="" coords="138,152,265,177"/>
 </map>
 </div>
 </div>
@@ -108,10 +109,52 @@ Include dependency graph for main.cpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:adc48771fce409defc0f0102cc2ab27ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adc48771fce409defc0f0102cc2ab27ff">filter</a> (void *argumente, SDL_Event *event)</td></tr>
+<tr class="separator:adc48771fce409defc0f0102cc2ab27ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="adc48771fce409defc0f0102cc2ab27ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc48771fce409defc0f0102cc2ab27ff">&#9670;&nbsp;</a></span>filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int filter </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>argumente</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Event *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00005">5</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="main_8cpp_source.html#l00012">main()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;                                              {</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keywordflow">return</span> (event-&gt;type != SDL_MULTIGESTURE &amp;&amp;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;            event-&gt;type != SDL_DOLLARGESTURE &amp;&amp; event-&gt;type != SDL_MULTIGESTURE &amp;&amp;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;            event-&gt;type != SDL_FINGERMOTION &amp;&amp; event-&gt;type != SDL_FINGERDOWN &amp;&amp;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;            event-&gt;type != SDL_FINGERUP);</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div></div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_adc48771fce409defc0f0102cc2ab27ff_icgraph.png" border="0" usemap="#main_8cpp_adc48771fce409defc0f0102cc2ab27ff_icgraph" alt=""/></div>
+<map name="main_8cpp_adc48771fce409defc0f0102cc2ab27ff_icgraph" id="main_8cpp_adc48771fce409defc0f0102cc2ab27ff_icgraph">
+<area shape="rect" id="node2" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="100,5,150,31"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
 
@@ -127,19 +170,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00005">5</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00012">12</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="menue_8cpp_source.html#l00028">menue::display()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;          {</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="classmenue.html">menue</a> m;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    m.<a class="code" href="classmenue.html#a1044413c9f875522539864a6e173040b">display</a>();</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div><div class="ttc" id="classmenue_html_a1044413c9f875522539864a6e173040b"><div class="ttname"><a href="classmenue.html#a1044413c9f875522539864a6e173040b">menue::display</a></div><div class="ttdeci">void display()</div><div class="ttdef"><b>Definition:</b> <a href="menue_8cpp_source.html#l00028">menue.cpp:28</a></div></div>
-<div class="ttc" id="classmenue_html"><div class="ttname"><a href="classmenue.html">menue</a></div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00016">menue.hpp:16</a></div></div>
+<p class="reference">References <a class="el" href="menue_8cpp_source.html#l00053">menue::display()</a>, and <a class="el" href="main_8cpp_source.html#l00005">filter()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;          {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    SDL_SetEventFilter(<a class="code" href="main_8cpp.html#adc48771fce409defc0f0102cc2ab27ff">filter</a>, <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classmenue.html">menue</a> m;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    m.<a class="code" href="classmenue.html#a1044413c9f875522539864a6e173040b">display</a>();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div><div class="ttc" id="main_8cpp_html_adc48771fce409defc0f0102cc2ab27ff"><div class="ttname"><a href="main_8cpp.html#adc48771fce409defc0f0102cc2ab27ff">filter</a></div><div class="ttdeci">int filter(void *argumente, SDL_Event *event)</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00005">main.cpp:5</a></div></div>
+<div class="ttc" id="classmenue_html_a1044413c9f875522539864a6e173040b"><div class="ttname"><a href="classmenue.html#a1044413c9f875522539864a6e173040b">menue::display</a></div><div class="ttdeci">void display()</div><div class="ttdef"><b>Definition:</b> <a href="menue_8cpp_source.html#l00053">menue.cpp:53</a></div></div>
+<div class="ttc" id="classmenue_html"><div class="ttname"><a href="classmenue.html">menue</a></div><div class="ttdef"><b>Definition:</b> <a href="menue_8hpp_source.html#l00020">menue.hpp:20</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
 <map name="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
-<area shape="rect" id="node2" href="classmenue.html#a1044413c9f875522539864a6e173040b" title="menue::display" alt="" coords="104,5,215,31"/>
-<area shape="rect" id="node3" href="classmenue.html#af5b9ae796f896dd1037a7d876cb9499f" title="menue::handleEvents" alt="" coords="263,5,413,31"/>
-<area shape="rect" id="node4" href="classgame.html#afd16ddc6a279481142319631373d6376" title="game::run" alt="" coords="461,5,542,31"/>
+<area shape="rect" id="node2" href="classmenue.html#a1044413c9f875522539864a6e173040b" title="menue::display" alt="" coords="104,116,215,141"/>
+<area shape="rect" id="node11" href="main_8cpp.html#adc48771fce409defc0f0102cc2ab27ff" title="filter" alt="" coords="136,165,182,191"/>
+<area shape="rect" id="node3" href="classmenue.html#af5b9ae796f896dd1037a7d876cb9499f" title="menue::handleEvents" alt="" coords="285,80,435,105"/>
+<area shape="rect" id="node8" href="classmenue.html#a3e7219c43d17aa5ecb225203e6802fea" title="menue::displayGamePreview" alt="" coords="263,153,457,179"/>
+<area shape="rect" id="node4" href="classmenue.html#a46f4dd81d1b05b32a7404bed409ef416" title="menue::goToTheRight" alt="" coords="505,5,658,31"/>
+<area shape="rect" id="node5" href="classmenue.html#af3d0aaf95bd34454f96b3415a39e8672" title="menue::goToTheLeft" alt="" coords="510,55,653,80"/>
+<area shape="rect" id="node6" href="classmenue.html#a064341a0a73c16ec686b7958d527dcdb" title="menue::executeGame" alt="" coords="505,104,658,129"/>
+<area shape="rect" id="node7" href="classgame.html#afd16ddc6a279481142319631373d6376" title="game::run" alt="" coords="706,104,787,129"/>
+<area shape="rect" id="node9" href="namespacetexture.html#ae6624177ab2ef64dcdb374fd1a71de8f" title="texture::renderTexture" alt="" coords="506,153,657,179"/>
+<area shape="rect" id="node10" href="namespacetexture.html#a1a1892b823abb0592fc9155848e1b805" title="texture::writeText" alt="" coords="521,203,643,228"/>
 </map>
 </div>
 
@@ -151,7 +202,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
-    <li class="footer">Generated on Sun Sep 16 2018 11:31:30 for MinigameCollection by
+    <li class="footer">Generated on Wed Sep 19 2018 18:10:27 for MinigameCollection by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

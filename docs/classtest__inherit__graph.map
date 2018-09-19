@@ -1,3 +1,3 @@
 <map id="test" name="test">
-<area shape="rect" id="node2" href="$classgame.html" title="{game\n|# win\l# renner\l# event\l# keys\l# running\l|+ game()\l+ run()\l# handleEvents()\l}" alt="" coords="5,5,127,159"/>
+<area shape="rect" id="node2" href="$classgame.html" title="{game\n|# win\l# renner\l# event\l# keys\l# running\l|+ game()\l+ ~game()\l+ run()\l# handleEvents()\l}" alt="" coords="5,5,127,172"/>
 </map>

@@ -101,7 +101,7 @@ Inheritance diagram for game:</div>
 <div class="dyncontent">
 <div class="center"><img src="classgame__inherit__graph.png" border="0" usemap="#game_inherit__map" alt="Inheritance graph"/></div>
 <map name="game_inherit__map" id="game_inherit__map">
-<area shape="rect" id="node2" href="classtest.html" title="{test\n||+ test()\l+ run()\l&#45; handleEvents()\l}" alt="" coords="7,207,126,307"/>
+<area shape="rect" id="node2" href="classtest.html" title="{test\n|&#45; color\l|+ test()\l+ ~test()\l+ run()\l&#45; handleEvents()\l}" alt="" coords="7,220,126,333"/>
 </map>
 </div>
 <div class="dynheader">
@@ -117,13 +117,15 @@ Collaboration diagram for game:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac15331684808147e73e8f4bca5078545"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame.html#ac15331684808147e73e8f4bca5078545">game</a> (SDL_Window *<a class="el" href="classgame.html#a641ee0bb8cf0be11aa9320ce913e3d95">win</a>, SDL_Renderer *<a class="el" href="classgame.html#a7f72a66e9148d9170269205417e5986a">renner</a>, bool *<a class="el" href="classgame.html#a4345f28f08ec7ed394d091651182fa23">running</a>)</td></tr>
 <tr class="separator:ac15331684808147e73e8f4bca5078545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af108e5bf28dedcf4f8dd404d1fea0b88"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame.html#af108e5bf28dedcf4f8dd404d1fea0b88">~game</a> ()=default</td></tr>
+<tr class="separator:af108e5bf28dedcf4f8dd404d1fea0b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd16ddc6a279481142319631373d6376"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame.html#afd16ddc6a279481142319631373d6376">run</a> ()=0</td></tr>
 <tr class="separator:afd16ddc6a279481142319631373d6376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a8fedf23a5fe4329f1f05758e26d58319"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame.html#a8fedf23a5fe4329f1f05758e26d58319">handleEvents</a> ()</td></tr>
-<tr class="separator:a8fedf23a5fe4329f1f05758e26d58319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d4295c085d59cbb0d86054b833b3b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame.html#a14d4295c085d59cbb0d86054b833b3b5">handleEvents</a> ()=0</td></tr>
+<tr class="separator:a14d4295c085d59cbb0d86054b833b3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -139,8 +141,9 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a4345f28f08ec7ed394d091651182fa23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="game_8hpp_source.html#l00013">13</a> of file <a class="el" href="game_8hpp_source.html">game.hpp</a>.</p>
+<div class="textblock"><p>An abstract class for all Games </p>
+
+<p class="definition">Definition at line <a class="el" href="game_8hpp_source.html#l00016">16</a> of file <a class="el" href="game_8hpp_source.html">game.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac15331684808147e73e8f4bca5078545"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac15331684808147e73e8f4bca5078545">&#9670;&nbsp;</a></span>game()</h2>
@@ -173,14 +176,48 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">win</td><td>is the window you play the game in </td></tr>
+    <tr><td class="paramname">renner</td><td>is the renderer for your game </td></tr>
+    <tr><td class="paramname">running</td><td>is a pointer to the boolean determing if the game is running or not </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="game_8hpp_source.html#l00030">30</a> of file <a class="el" href="game_8hpp_source.html">game.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l00007">7</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="game_8hpp_source.html#l00024">renner</a>, <a class="el" href="game_8hpp_source.html#l00027">running</a>, and <a class="el" href="game_8hpp_source.html#l00023">win</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                                               {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    this-&gt;<a class="code" href="classgame.html#a641ee0bb8cf0be11aa9320ce913e3d95">win</a> = <a class="code" href="classgame.html#a641ee0bb8cf0be11aa9320ce913e3d95">win</a>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    this-&gt;<a class="code" href="classgame.html#a7f72a66e9148d9170269205417e5986a">renner</a> = <a class="code" href="classgame.html#a7f72a66e9148d9170269205417e5986a">renner</a>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    this-&gt;<a class="code" href="classgame.html#a4345f28f08ec7ed394d091651182fa23">running</a> = <a class="code" href="classgame.html#a4345f28f08ec7ed394d091651182fa23">running</a>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div><div class="ttc" id="classgame_html_a641ee0bb8cf0be11aa9320ce913e3d95"><div class="ttname"><a href="classgame.html#a641ee0bb8cf0be11aa9320ce913e3d95">game::win</a></div><div class="ttdeci">SDL_Window * win</div><div class="ttdef"><b>Definition:</b> <a href="game_8hpp_source.html#l00023">game.hpp:23</a></div></div>
-<div class="ttc" id="classgame_html_a4345f28f08ec7ed394d091651182fa23"><div class="ttname"><a href="classgame.html#a4345f28f08ec7ed394d091651182fa23">game::running</a></div><div class="ttdeci">bool * running</div><div class="ttdef"><b>Definition:</b> <a href="game_8hpp_source.html#l00027">game.hpp:27</a></div></div>
-<div class="ttc" id="classgame_html_a7f72a66e9148d9170269205417e5986a"><div class="ttname"><a href="classgame.html#a7f72a66e9148d9170269205417e5986a">game::renner</a></div><div class="ttdeci">SDL_Renderer * renner</div><div class="ttdef"><b>Definition:</b> <a href="game_8hpp_source.html#l00024">game.hpp:24</a></div></div>
+<p class="reference">References <a class="el" href="game_8hpp_source.html#l00045">renner</a>, <a class="el" href="game_8hpp_source.html#l00048">running</a>, and <a class="el" href="game_8hpp_source.html#l00044">win</a>.</p>
+<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;                                                               {</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    this-&gt;<a class="code" href="classgame.html#a641ee0bb8cf0be11aa9320ce913e3d95">win</a> = <a class="code" href="classgame.html#a641ee0bb8cf0be11aa9320ce913e3d95">win</a>;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    this-&gt;<a class="code" href="classgame.html#a7f72a66e9148d9170269205417e5986a">renner</a> = <a class="code" href="classgame.html#a7f72a66e9148d9170269205417e5986a">renner</a>;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    this-&gt;<a class="code" href="classgame.html#a4345f28f08ec7ed394d091651182fa23">running</a> = <a class="code" href="classgame.html#a4345f28f08ec7ed394d091651182fa23">running</a>;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div><div class="ttc" id="classgame_html_a641ee0bb8cf0be11aa9320ce913e3d95"><div class="ttname"><a href="classgame.html#a641ee0bb8cf0be11aa9320ce913e3d95">game::win</a></div><div class="ttdeci">SDL_Window * win</div><div class="ttdef"><b>Definition:</b> <a href="game_8hpp_source.html#l00044">game.hpp:44</a></div></div>
+<div class="ttc" id="classgame_html_a4345f28f08ec7ed394d091651182fa23"><div class="ttname"><a href="classgame.html#a4345f28f08ec7ed394d091651182fa23">game::running</a></div><div class="ttdeci">bool * running</div><div class="ttdef"><b>Definition:</b> <a href="game_8hpp_source.html#l00048">game.hpp:48</a></div></div>
+<div class="ttc" id="classgame_html_a7f72a66e9148d9170269205417e5986a"><div class="ttname"><a href="classgame.html#a7f72a66e9148d9170269205417e5986a">game::renner</a></div><div class="ttdeci">SDL_Renderer * renner</div><div class="ttdef"><b>Definition:</b> <a href="game_8hpp_source.html#l00045">game.hpp:45</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="af108e5bf28dedcf4f8dd404d1fea0b88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af108e5bf28dedcf4f8dd404d1fea0b88">&#9670;&nbsp;</a></span>~game()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual game::~game </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>default destructor </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -206,25 +243,27 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Here runs the game. This has to be called 1 time </p>
 
 <p>Implemented in <a class="el" href="classtest.html#ad19b65e7096dc03e8eb7ec0a9976a2c2">test</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="menue_8cpp_source.html#l00040">menue::handleEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="menue_8cpp_source.html#l00100">menue::executeGame()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classgame_afd16ddc6a279481142319631373d6376_icgraph.png" border="0" usemap="#classgame_afd16ddc6a279481142319631373d6376_icgraph" alt=""/></div>
 <map name="classgame_afd16ddc6a279481142319631373d6376_icgraph" id="classgame_afd16ddc6a279481142319631373d6376_icgraph">
-<area shape="rect" id="node2" href="classmenue.html#af5b9ae796f896dd1037a7d876cb9499f" title="menue::handleEvents" alt="" coords="135,5,285,31"/>
-<area shape="rect" id="node3" href="classmenue.html#a1044413c9f875522539864a6e173040b" title="menue::display" alt="" coords="333,5,444,31"/>
-<area shape="rect" id="node4" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="492,5,542,31"/>
+<area shape="rect" id="node2" href="classmenue.html#a064341a0a73c16ec686b7958d527dcdb" title="menue::executeGame" alt="" coords="135,5,287,31"/>
+<area shape="rect" id="node3" href="classmenue.html#af5b9ae796f896dd1037a7d876cb9499f" title="menue::handleEvents" alt="" coords="335,5,486,31"/>
+<area shape="rect" id="node4" href="classmenue.html#a1044413c9f875522539864a6e173040b" title="menue::display" alt="" coords="534,5,645,31"/>
+<area shape="rect" id="node5" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="693,5,743,31"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a8fedf23a5fe4329f1f05758e26d58319"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fedf23a5fe4329f1f05758e26d58319">&#9670;&nbsp;</a></span>handleEvents()</h2>
+<a id="a14d4295c085d59cbb0d86054b833b3b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d4295c085d59cbb0d86054b833b3b5">&#9670;&nbsp;</a></span>handleEvents()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,7 +272,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void game::handleEvents </td>
+          <td class="memname">virtual void game::handleEvents </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -241,30 +280,13 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This handele the events </p>
 
-<p>Reimplemented in <a class="el" href="classtest.html#adc4053b944736bb84c3fc132124b427e">test</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="game_8hpp_source.html#l00036">36</a> of file <a class="el" href="game_8hpp_source.html">game.hpp</a>.</p>
-
-<p class="reference">References <a class="el" href="game_8hpp_source.html#l00025">event</a>, <a class="el" href="game_8hpp_source.html#l00026">keys</a>, and <a class="el" href="game_8hpp_source.html#l00027">running</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="test_8cpp_source.html#l00023">test::handleEvents()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                        {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span>(SDL_PollEvent(&amp;this-&gt;<a class="code" href="classgame.html#aa5594f8c38763fff9321ff94ccae4107">event</a>)){</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">switch</span>(this-&gt;<a class="code" href="classgame.html#aa5594f8c38763fff9321ff94ccae4107">event</a>.type){</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">case</span> SDL_QUIT: *this-&gt;<a class="code" href="classgame.html#a4345f28f08ec7ed394d091651182fa23">running</a> = <span class="keyword">false</span>; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">case</span> SDL_KEYDOWN: this-&gt;<a class="code" href="classgame.html#a6b62957d861bdcee30c7fdc4734f559f">keys</a>[this-&gt;<span class="keyword">event</span>.key.keysym.sym] = 1; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">case</span> SDL_KEYUP: this-&gt;<a class="code" href="classgame.html#a6b62957d861bdcee30c7fdc4734f559f">keys</a>[this-&gt;<span class="keyword">event</span>.key.keysym.sym] = 0; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div><div class="ttc" id="classgame_html_aa5594f8c38763fff9321ff94ccae4107"><div class="ttname"><a href="classgame.html#aa5594f8c38763fff9321ff94ccae4107">game::event</a></div><div class="ttdeci">SDL_Event event</div><div class="ttdef"><b>Definition:</b> <a href="game_8hpp_source.html#l00025">game.hpp:25</a></div></div>
-<div class="ttc" id="classgame_html_a6b62957d861bdcee30c7fdc4734f559f"><div class="ttname"><a href="classgame.html#a6b62957d861bdcee30c7fdc4734f559f">game::keys</a></div><div class="ttdeci">std::unordered_map&lt; int, int &gt; keys</div><div class="ttdef"><b>Definition:</b> <a href="game_8hpp_source.html#l00026">game.hpp:26</a></div></div>
-<div class="ttc" id="classgame_html_a4345f28f08ec7ed394d091651182fa23"><div class="ttname"><a href="classgame.html#a4345f28f08ec7ed394d091651182fa23">game::running</a></div><div class="ttdeci">bool * running</div><div class="ttdef"><b>Definition:</b> <a href="game_8hpp_source.html#l00027">game.hpp:27</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classgame_a8fedf23a5fe4329f1f05758e26d58319_icgraph.png" border="0" usemap="#classgame_a8fedf23a5fe4329f1f05758e26d58319_icgraph" alt=""/></div>
-<map name="classgame_a8fedf23a5fe4329f1f05758e26d58319_icgraph" id="classgame_a8fedf23a5fe4329f1f05758e26d58319_icgraph">
-<area shape="rect" id="node2" href="classtest.html#adc4053b944736bb84c3fc132124b427e" title="test::handleEvents" alt="" coords="196,5,327,31"/>
-<area shape="rect" id="node3" href="classtest.html#ad19b65e7096dc03e8eb7ec0a9976a2c2" title="test::run" alt="" coords="375,5,445,31"/>
-</map>
-</div>
+<p>Implemented in <a class="el" href="classtest.html#adc4053b944736bb84c3fc132124b427e">test</a>.</p>
 
 </div>
 </div>
@@ -289,9 +311,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game_8hpp_source.html#l00023">23</a> of file <a class="el" href="game_8hpp_source.html">game.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game_8hpp_source.html#l00044">44</a> of file <a class="el" href="game_8hpp_source.html">game.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8hpp_source.html#l00030">game()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l00007">game()</a>.</p>
 
 </div>
 </div>
@@ -315,9 +337,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game_8hpp_source.html#l00024">24</a> of file <a class="el" href="game_8hpp_source.html">game.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game_8hpp_source.html#l00045">45</a> of file <a class="el" href="game_8hpp_source.html">game.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8hpp_source.html#l00030">game()</a>, and <a class="el" href="test_8cpp_source.html#l00011">test::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l00007">game()</a>, and <a class="el" href="test_8cpp_source.html#l00013">test::run()</a>.</p>
 
 </div>
 </div>
@@ -341,9 +363,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game_8hpp_source.html#l00025">25</a> of file <a class="el" href="game_8hpp_source.html">game.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game_8hpp_source.html#l00046">46</a> of file <a class="el" href="game_8hpp_source.html">game.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8hpp_source.html#l00036">handleEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="test_8cpp_source.html#l00025">test::handleEvents()</a>.</p>
 
 </div>
 </div>
@@ -367,9 +389,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game_8hpp_source.html#l00026">26</a> of file <a class="el" href="game_8hpp_source.html">game.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game_8hpp_source.html#l00047">47</a> of file <a class="el" href="game_8hpp_source.html">game.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8hpp_source.html#l00036">handleEvents()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="test_8cpp_source.html#l00025">test::handleEvents()</a>.</p>
 
 </div>
 </div>
@@ -393,14 +415,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game_8hpp_source.html#l00027">27</a> of file <a class="el" href="game_8hpp_source.html">game.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game_8hpp_source.html#l00048">48</a> of file <a class="el" href="game_8hpp_source.html">game.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8hpp_source.html#l00030">game()</a>, <a class="el" href="game_8hpp_source.html#l00036">handleEvents()</a>, and <a class="el" href="test_8cpp_source.html#l00011">test::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l00007">game()</a>, <a class="el" href="test_8cpp_source.html#l00025">test::handleEvents()</a>, and <a class="el" href="test_8cpp_source.html#l00013">test::run()</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>core/header/<a class="el" href="game_8hpp_source.html">game.hpp</a></li>
+<li>core/source/<a class="el" href="game_8cpp_source.html">game.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -408,7 +431,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classgame.html">game</a></li>
-    <li class="footer">Generated on Sun Sep 16 2018 11:31:30 for MinigameCollection by
+    <li class="footer">Generated on Wed Sep 19 2018 18:10:27 for MinigameCollection by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

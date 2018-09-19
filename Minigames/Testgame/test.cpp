@@ -4,6 +4,8 @@
 
 #include "test.hpp"
 
+//this is a placeholer it will not be commented
+
 test::test(SDL_Window *win, SDL_Renderer *renner, bool* running): game(win,renner,running) {
 
 }

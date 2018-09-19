@@ -1,5 +1,6 @@
 <map id="core/header/game.hpp" name="core/header/game.hpp">
-<area shape="rect" id="node2" href="$test_8hpp.html" title="Minigames/Testgame\l/test.hpp" alt="" coords="79,79,226,117"/>
-<area shape="rect" id="node3" href="$menue_8cpp.html" title="menue/menue.cpp" alt="" coords="5,172,137,197"/>
-<area shape="rect" id="node4" href="$test_8cpp.html" title="Minigames/Testgame\l/test.cpp" alt="" coords="162,165,309,204"/>
+<area shape="rect" id="node2" href="$game_8cpp.html" title="core/source/game.cpp" alt="" coords="5,85,159,111"/>
+<area shape="rect" id="node3" href="$test_8hpp.html" title="Minigames/Testgame\l/test.hpp" alt="" coords="183,79,330,117"/>
+<area shape="rect" id="node4" href="$menue_8cpp.html" title="menue/source/menue.cpp" alt="" coords="76,172,251,197"/>
+<area shape="rect" id="node5" href="$test_8cpp.html" title="Minigames/Testgame\l/test.cpp" alt="" coords="275,165,422,204"/>
 </map>

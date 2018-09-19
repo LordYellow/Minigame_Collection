@@ -10,18 +10,37 @@
 #include <SDL2/SDL_ttf.h>
 #include <SDL2/SDL_image.h>
 
-class texture {
-public:
 
-    static void renderTexture(SDL_Renderer *renner, std::string kindOfTexture, SDL_Rect dst);
+namespace texture {
 
-    static void drawRectangle(SDL_Renderer *renner, SDL_Rect dst, SDL_Color color, bool fill);
+    /**
+     * this will render your texture
+     * @param renner the renderer you use
+     * @param kindOfTexture the path to the texture you wanna draw
+     * @param dst a recrtangle with the future destination of the texture
+     */
+    void renderTexture(SDL_Renderer *renner, std::string kindOfTexture, SDL_Rect dst);
 
-    static void writeText(SDL_Renderer *renner, std::string message, SDL_Rect dst, int fontSize, SDL_Color color);
+    /**
+     * at the moment this does nothing
+     * @param renner
+     * @param dst
+     * @param color
+     * @param fill
+     */
+    void drawRectangle(SDL_Renderer *renner, SDL_Rect dst, SDL_Color color, bool fill);
 
-private:
-    texture() = default; // you are not allowed to create such an object
-    static SDL_Rect rectangle;
+    /**
+     * with this you are able to draw text
+     * @param renner the renderer
+     * @param message the message you wanna draw
+     * @param dst the destination of the text
+     * @param fontSize the fontsize
+     * @param color the color of the texture
+     */
+    void writeText(SDL_Renderer *renner, std::string message, SDL_Rect dst, int fontSize, SDL_Color color);
+
+    static SDL_Rect rectangle = {0, 0, 0, 0};
 };
 
 #endif //MINIGAME_COLLECTION_TEXTURE_HPP
