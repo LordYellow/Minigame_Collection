@@ -1,4 +1,5 @@
-<map id="menue/menue.hpp" name="menue/menue.hpp">
-<area shape="rect" id="node2" href="$definitions_8hpp.html" title="./../core/header/definitions.hpp" alt="" coords="5,79,206,104"/>
-<area shape="rect" id="node3" href="$debug_8hpp.html" title="./debug.hpp" alt="" coords="60,152,152,177"/>
+<map id="menue/header/menue.hpp" name="menue/header/menue.hpp">
+<area shape="rect" id="node2" href="$definitions_8hpp.html" title="core/header/definitions.hpp" alt="" coords="5,152,188,177"/>
+<area shape="rect" id="node6" href="$gamePreview_8hpp.html" title="gamePreview.hpp" alt="" coords="83,79,211,104"/>
+<area shape="rect" id="node3" href="$debug_8hpp.html" title="./debug.hpp" alt="" coords="51,225,142,251"/>
 </map>

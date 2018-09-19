@@ -1,3 +1,8 @@
 <map id="menue" name="menue">
-<area shape="rect" id="node3" title="STL class. " alt="" coords="5,140,146,227"/>
+<area shape="rect" id="node3" href="$classgamePreview.html" title="this class holds the preview for every game " alt="" coords="11,361,138,488"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="28,160,108,233"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="5,5,131,92"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="147,264,261,337"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="323,153,464,240"/>
+<area shape="rect" id="node8" href="$classgame.html" title="{game\n|# win\l# renner\l# event\l# running\l|+ game()\l+ ~game()\l+ run()\l# handleEvents()\l}" alt="" coords="362,549,484,703"/>
 </map>

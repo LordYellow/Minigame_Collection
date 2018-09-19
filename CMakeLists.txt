@@ -11,7 +11,7 @@ find_package(SDL2_image REQUIRED)
 find_package(SDL2_ttf REQUIRED)
 
 add_executable(Minigame_Collection
-        main.cpp core/header/debug.hpp core/header/definitions.hpp menue/menue.cpp menue/menue.hpp)
+        main.cpp core/header/debug.hpp core/header/definitions.hpp menue/source/menue.cpp menue/header/menue.hpp core/header/game.hpp Minigames/Testgame/test.cpp Minigames/Testgame/test.hpp core/source/game.cpp menue/source/gamePreview.cpp menue/header/gamePreview.hpp core/source/texture.cpp core/header/texture.hpp)
 
 include_directories(${SDL2_INCLUDE_DIR}
         ${SDL2_IMAGE_INCLUDE_DIR}

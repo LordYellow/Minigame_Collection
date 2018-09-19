@@ -1,6 +1,14 @@
 <map id="core/header/debug.hpp" name="core/header/debug.hpp">
-<area shape="rect" id="node2" href="$definitions_8hpp.html" title="core/header/definitions.hpp" alt="" coords="5,79,188,104"/>
-<area shape="rect" id="node3" href="$main_8cpp.html" title="main.cpp" alt="" coords="7,225,82,251"/>
-<area shape="rect" id="node4" href="$menue_8hpp.html" title="menue/menue.hpp" alt="" coords="82,152,215,177"/>
-<area shape="rect" id="node5" href="$menue_8cpp.html" title="menue/menue.cpp" alt="" coords="107,225,238,251"/>
+<area shape="rect" id="node2" href="$definitions_8hpp.html" title="core/header/definitions.hpp" alt="" coords="584,79,766,104"/>
+<area shape="rect" id="node3" href="$game_8hpp.html" title="core/header/game.hpp" alt="" coords="176,152,331,177"/>
+<area shape="rect" id="node8" href="$texture_8hpp.html" title="core/header/texture.hpp" alt="" coords="471,152,634,177"/>
+<area shape="rect" id="node10" href="$main_8cpp.html" title="main.cpp" alt="" coords="835,319,910,344"/>
+<area shape="rect" id="node11" href="$menue_8hpp.html" title="menue/header/menue.hpp" alt="" coords="590,232,768,257"/>
+<area shape="rect" id="node12" href="$gamePreview_8hpp.html" title="menue/header/gamePreview.hpp" alt="" coords="712,152,929,177"/>
+<area shape="rect" id="node4" href="$game_8cpp.html" title="core/source/game.cpp" alt="" coords="177,232,330,257"/>
+<area shape="rect" id="node5" href="$test_8hpp.html" title="Minigames/Testgame\l/test.hpp" alt="" coords="5,225,153,264"/>
+<area shape="rect" id="node6" href="$menue_8cpp.html" title="menue/source/menue.cpp" alt="" coords="465,319,640,344"/>
+<area shape="rect" id="node7" href="$test_8cpp.html" title="Minigames/Testgame\l/test.cpp" alt="" coords="5,312,153,351"/>
+<area shape="rect" id="node9" href="$texture_8cpp.html" title="core/source/texture.cpp" alt="" coords="355,232,515,257"/>
+<area shape="rect" id="node13" href="$gamePreview_8cpp.html" title="menue/source/gamePreview.cpp" alt="" coords="792,232,1006,257"/>
 </map>

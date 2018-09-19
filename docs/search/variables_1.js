@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['features',['features',['../feature__tests_8c.html#a1582568e32f689337602a16bf8a5bff0',1,'features():&#160;feature_tests.c'],['../feature__tests_8cxx.html#a1582568e32f689337602a16bf8a5bff0',1,'features():&#160;feature_tests.cxx']]]
+  ['description',['description',['../classgamePreview.html#af562dd0142919b64b2b2a7771c506d9a',1,'gamePreview']]]
 ];
