@@ -5,6 +5,7 @@
 #include <menue/header/menue.hpp>
 #include "Minigames/Testgame/test.hpp"
 #include "./../../core/header/texture.hpp"
+#include "Minigames/Chess/header/chess.hpp"
 
 #define FONTSIZE 30
 
@@ -41,6 +42,7 @@ menue::menue() {
                                   "This is another Testgame. Do you know that you can vote for PDF in a few Years?",
                                   "testimage2.png");
     this->gameVector.emplace_back(0, "Much Longer name to Test stuff", "This is another Testgame", "testimage3.png");
+    this->gameVector.emplace_back(1, "Chess", "This is Classic Chess", "chess.jpg");
 }
 
 menue::~menue() {
@@ -87,12 +89,12 @@ void menue::handleEvents() {
     }
 
     //if you are unable to scroll in a horizontal direction
-    if (this->keys[SDLK_DOWN]) {
+    if (this->keys[SDLK_LEFT]) {
         this->goToTheLeft();
     }
 
     //if you are unable to scroll in a horizontal direction
-    if (this->keys[SDLK_UP]) {
+    if (this->keys[SDLK_RIGHT]) {
         this->goToTheRight();
     }
 }
@@ -102,6 +104,9 @@ void menue::executeGame() {
     switch (this->gameVector[this->pia].getID()) {
         case 0:
             this->spiel = new test(this->win, this->renner, &this->running);
+            break;
+        case 1:
+            this->spiel = new chess(this->win, this->renner, &this->running);
             break;
         default: DEB_ERR("Selection Error")
             break;

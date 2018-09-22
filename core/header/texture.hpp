@@ -19,7 +19,8 @@ namespace texture {
      * @param kindOfTexture the path to the texture you wanna draw
      * @param dst a recrtangle with the future destination of the texture
      */
-    void renderTexture(SDL_Renderer *renner, std::string kindOfTexture, SDL_Rect dst);
+    void
+    renderTexture(SDL_Renderer *renner, std::string kindOfTexture, SDL_Rect dst, int = 0, int = 0, int = 0, int = 0);
 
     /**
      * at the moment this does nothing

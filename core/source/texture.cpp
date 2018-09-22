@@ -4,7 +4,15 @@
 
 #include <core/header/texture.hpp>
 
-void texture::renderTexture(SDL_Renderer *renner, std::string kindOfTexture, SDL_Rect dst) {
+
+
+void texture::drawRectangle(SDL_Renderer *renner, SDL_Rect dst, SDL_Color color, bool fill) {
+    SDL_SetRenderDrawColor(renner, color.r, color.g, color.b, SDL_ALPHA_OPAQUE);
+    if (fill) { SDL_RenderFillRect(renner, &dst); } else { SDL_RenderDrawRect(renner, &dst); }
+}
+
+void texture::renderTexture(SDL_Renderer *renner, std::string kindOfTexture, SDL_Rect dst, int posX, int posY, int tw,
+                            int th) {
     //load the image to an surface
     auto s = IMG_Load(kindOfTexture.c_str());
 
@@ -12,12 +20,12 @@ void texture::renderTexture(SDL_Renderer *renner, std::string kindOfTexture, SDL
     auto texture1 = SDL_CreateTextureFromSurface(renner, s);
 
     //to some stuff to scale it (?)
-    int w, h;
-    SDL_QueryTexture(texture1, nullptr, nullptr, &w, &h);
-    rectangle.x = 0;
-    rectangle.y = 0;
-    rectangle.h = s->h;
-    rectangle.w = s->w;
+    //int w, h;
+    //SDL_QueryTexture(texture1, nullptr, nullptr, &w, &h);
+    rectangle.x = posX;
+    rectangle.y = posY;
+    rectangle.h = (th == 0) ? s->h : th;
+    rectangle.w = (tw == 0) ? s->w : th;
 
     //render it
     SDL_RenderCopy(renner, texture1, &rectangle, &dst);
@@ -27,10 +35,6 @@ void texture::renderTexture(SDL_Renderer *renner, std::string kindOfTexture, SDL
 
     //destroys the texture
     SDL_DestroyTexture(texture1);
-}
-
-void texture::drawRectangle(SDL_Renderer *renner, SDL_Rect dst, SDL_Color color, bool fill) {
-    //coming soon!
 }
 
 void texture::writeText(SDL_Renderer *renner, std::string message, SDL_Rect dst, int fontSize, SDL_Color color) {
