@@ -9,4 +9,8 @@
 
 #include "./debug.hpp"
 
+#define CHECK 1
+#define SELECTED 2
+#define POSSIBLE 3
+
 #endif //MINIGAME_COLLECTION_DEFINITIONS_HPP

@@ -1,0 +1,5 @@
+<map id="menue::executeGame" name="menue::executeGame">
+<area shape="rect" id="node2" href="$classmenue.html#af5b9ae796f896dd1037a7d876cb9499f" title="menue::handleEvents" alt="" coords="206,5,356,31"/>
+<area shape="rect" id="node3" href="$classmenue.html#a1044413c9f875522539864a6e173040b" title="menue::display" alt="" coords="404,5,515,31"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="563,5,613,31"/>
+</map>

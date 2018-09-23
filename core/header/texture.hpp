@@ -9,7 +9,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 #include <SDL2/SDL_image.h>
-
+#include <unordered_map>
 
 namespace texture {
 
@@ -42,6 +42,8 @@ namespace texture {
     void writeText(SDL_Renderer *renner, std::string message, SDL_Rect dst, int fontSize, SDL_Color color);
 
     static SDL_Rect rectangle = {0, 0, 0, 0};
+
+    extern std::unordered_map<std::string, SDL_Texture *> textures;
 };
 
 #endif //MINIGAME_COLLECTION_TEXTURE_HPP

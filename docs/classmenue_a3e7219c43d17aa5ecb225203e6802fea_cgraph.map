@@ -1,0 +1,4 @@
+<map id="menue::displayGamePreview" name="menue::displayGamePreview">
+<area shape="rect" id="node2" href="$namespacetexture.html#ae6624177ab2ef64dcdb374fd1a71de8f" title="texture::renderTexture" alt="" coords="248,5,400,31"/>
+<area shape="rect" id="node3" href="$namespacetexture.html#a1a1892b823abb0592fc9155848e1b805" title="texture::writeText" alt="" coords="263,55,385,80"/>
+</map>

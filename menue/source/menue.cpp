@@ -37,12 +37,12 @@ menue::menue() {
                                                                                                      : SDL_WINDOW_FULLSCREEN_DESKTOP);
 
     //now the gameVector is filled with with the gamePreview
+    this->gameVector.emplace_back(1, "Chess", "This is Classic Chess", "chess.jpg");
     this->gameVector.emplace_back(0, "Testgame", "This is a Testgame", "testimage.png");
     this->gameVector.emplace_back(0, "Testgame2",
                                   "This is another Testgame. Do you know that you can vote for PDF in a few Years?",
                                   "testimage2.png");
     this->gameVector.emplace_back(0, "Much Longer name to Test stuff", "This is another Testgame", "testimage3.png");
-    this->gameVector.emplace_back(1, "Chess", "This is Classic Chess", "chess.jpg");
 }
 
 menue::~menue() {

@@ -26,4 +26,10 @@ void gameUtilities::drawChessField(SDL_Renderer *renner, SDL_Window *win) {
     }
 }
 
-
+void gameUtilities::checkOutSize(SDL_Window *win, int &x, int &y, int &s) {
+    int wx, wy;
+    SDL_GetWindowSize(win, &wx, &wy);
+    s = (wx / 8 < wy / 8 ? wx : wy) / 8;
+    x = s == wy / 8 ? (wx - wy) / 2 : 0;
+    y = s == wy / 8 ? 0 : (wy - wx) / 2;
+}

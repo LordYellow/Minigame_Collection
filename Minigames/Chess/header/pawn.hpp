@@ -9,13 +9,16 @@
 
 class pawn : public piece {
 public:
-    pawn(int pos, bool color);
+    pawn(int pos, bool color, std::array<int, 64> *field);
 
     ~pawn() override = default;
 
-    void showMoves() override;
+    std::array<int, 64>
+    showMoves(std::array<int, 64> field, std::array<int, 64> &pField, std::string &lastMove) override;
 
-    bool doMove(int x, int y) override;
+private:
+
+    void signMove(std::string &lastMove, int newPos) override;
 };
 
 #endif //MINIGAME_COLLECTION_PAWN_HPP

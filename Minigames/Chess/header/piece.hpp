@@ -5,17 +5,21 @@
 #ifndef MINIGAME_COLLECTION_PIECE_HPP
 #define MINIGAME_COLLECTION_PIECE_HPP
 
+#include "./../../../core/header/definitions.hpp"
 #include <SDL2/SDL.h>
+#include <array>
 
 class piece {
 public:
-    piece(int pos, bool color);
+    piece(int pos, bool color, std::array<int, 64> *field);
 
     virtual ~piece() = default;
 
-    virtual void showMoves() = 0;
+    virtual std::array<int, 64>
+    showMoves(std::array<int, 64> field, std::array<int, 64> &pField, std::string &lastMove) = 0;
 
-    virtual bool doMove(int x, int y) = 0;
+    virtual bool doMove(int newPos, std::array<int, 64> &pField, std::array<int, 64> &field,
+                        std::vector<std::unique_ptr<piece> > &pieces, std::string &lastMove);
 
     void draw(SDL_Renderer *renner, SDL_Window *win);
 
@@ -26,6 +30,9 @@ public:
     inline bool getColor() const { return this->color; }
 
 protected:
+
+    virtual void signMove(std::string &lastMove, int newPos) = 0;
+
     int id, pos;
     bool color;
 };

@@ -24,9 +24,15 @@ private:
 
     void highlightField();
 
+    bool pieceAtPosition(int pos);
+
     std::array<int, 64> fieldHighlighting;
+    std::array<int, 64> field;
     std::vector<std::unique_ptr<piece> > pieces;
     bool turn = false, dragAndDrop = false;
+    int mouseX, mouseY;
+    std::string lastMove = "";
+    piece *selectedPiece;
 
 };
 
